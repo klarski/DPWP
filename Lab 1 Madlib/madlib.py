@@ -21,8 +21,7 @@ madlib_answers['booknumber'] = raw_input('Enter a number: ')
 
 if madlib_answers['booknumber'] > 50:
     total_books = int(madlib_answers['booknumber'])*2
-    print (str(total_books) + ' books in my life so I am very smart.')
+    total_books = (str(total_books) + ' books in my life so I am very smart.')
 else:
     total_books = madlib_answers['booknumber']/2
-    print(str(total_books) + ' books in my life so I am not very bright.')
-
+    total_books = (str(total_books) + ' books in my life so I am not very bright.')
