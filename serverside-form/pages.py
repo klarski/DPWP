@@ -5,11 +5,17 @@ class Form(object):
         <html>
             <head>
                 <title>Voter's Registration Form</title>
+                <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+                <link href="css/main.css" rel="stylesheet" type="text/css" />
             </head>
             <body>
         """
         self.body = """
-            <h1>Voters Registration form</h1>
+            <div class="header">
+                <img href="images/poll-img.png" width="50" height="50" />
+                <h1>Voters Registration form</h1>
+            </div>
+            <p>I'm talking about something more substantial. It's been several months now since I announced I was running for president. They cheered on the steps of the Lincoln Memorial when Dr. For eighteen long months, you have stood up, one by one, and said enough to the politics of the past.</p>
             <form>
                 <ul>
                     <li>
@@ -35,6 +41,8 @@ class Form(object):
                     <li>
                         <label>City:</label>
                         <input class="text" type="text" name="city">
+                    </li>
+                    <li>
                         <label>State:</label>
                         <select name="state">
                             <option value="AL">AL</option>
