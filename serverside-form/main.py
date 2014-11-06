@@ -8,7 +8,6 @@ Assignment: Lab 2 Server Side Form
 import webapp2
 from pages import Form
 
-
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         f = Form()
