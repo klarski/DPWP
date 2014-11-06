@@ -9,14 +9,14 @@ class Form(object):
                 <link href="css/main.css" rel="stylesheet" type="text/css" />
             </head>
             <body>
-        """
-        self.body = """
             <div class="header">
-                <img href="images/poll-img.png" width="50" height="50" />
+                <img src="images/poll-img.png" width="80" height="80" />
                 <h1>Voters Registration form</h1>
             </div>
+        """
+        self.body = """
             <p>I'm talking about something more substantial. It's been several months now since I announced I was running for president. They cheered on the steps of the Lincoln Memorial when Dr. For eighteen long months, you have stood up, one by one, and said enough to the politics of the past.</p>
-            <form>
+            <form method="GET">
                 <ul>
                     <li>
                         <label>First Name:</label>
@@ -112,7 +112,7 @@ class Form(object):
 
                     <li>
                         <label>Choice of Party:</label>
-                            <select name="ref">
+                            <select name="party">
                                 <option value="Democrat">Democrat</option>
                                 <option value="Republican">Republican</option>
                                 <option value="Independent">Independent</option>
@@ -122,8 +122,8 @@ class Form(object):
 
                     <li>
                         <label>Will you be 18 years old before or on election day?</label></br>
-                        <input type="radio" name="age" value="Yes">Yes
-                        <input type="radio" name="age" value="No">No
+                        <input class="age" type="radio" name="age" value="Yes">Yes
+                        <input class="age" type="radio" name="age" value="No">No
                     </li>
 
                     <li>
@@ -131,6 +131,18 @@ class Form(object):
                     </li>
                 <ul>
             </form>
+
+        """
+        self.body_page2 = """
+            <h3>{age}</h3>
+            <ul>
+                <li>First Name: {fname}</li>
+                <li>Last Name: {lname}</li>
+                <li>Date of Birth: {dob}</li>
+                <li>Address: {address}, {city}, {state}, {zip}</li>
+                <li>ID number: {idnum}</li>
+                <li>Party: {party}<li>
+            </ul>
 
         """
         self.close = """
