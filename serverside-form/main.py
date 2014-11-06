@@ -6,10 +6,13 @@ Assignment: Lab 2 Server Side Form
 '''
 
 import webapp2
+from pages import Form
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        f = Form()
+        self.response.write(f.head + f.body + f.close)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
