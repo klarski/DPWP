@@ -1,18 +1,51 @@
 body {
     margin: 0 auto;
-    width: 100%;
+    width: 100%;    
+}
+
+h1, h2, h3, h4, p, label{
+    font-family: 'Lato', sans-serif;
 }
 
 .header{
+    background-color: #12559E;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.footer{
+    clear: both;
+    margin: 20px 20px;
     background-color: #12559E;
     height: 200px;
 }
 
 
 .header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
 
-    margin: 10 auto;
-    padding-top: 20px
+}
+
+#criteria {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px 15px;
+    background-color: #ccc;
+}
+
+#criteria li {
+    float: left;
 }
 
 input {
@@ -26,15 +59,105 @@ label {
 	float: left;
 }
 
-li {
+#form{
+    margin-left: 160px;
+    margin-right: 200px;
+}
+
+#form li {
     list-style-type: none;
     margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    position: relative;
+}
+ 
+#form li:nth-child(1) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(2) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(3) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(4) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(5) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(6) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(7) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form li:nth-child(8) input{
+    width: 300px;
+    height: 30px;
+}
+
+#form select {
+    width: 300px;
+    height: 30px;
+}
+
+
+.age {
+    width: 100px;
 }
 
 h1{
     text-align: center;
+}
+
+button.submit {
+    background-color: #12559E;
+    color: #fff;
+    border: 1px solid #12559E;
+    border-radius: 5px;
+    webkit-border-radius: 5px;
+    moz-border-radius: 5px;
+    ms-border-radius: 5px;
+    o-border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+#answers ul{
+    list-style-type: none;
+}
+
+#answers h2 {
+    text-align: center;
+}
+
+#answers {
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px 10px;
+    background-color: #ccc;
     font-family: 'Lato', sans-serif;
 }
-form {
-    margin-left: 200px;
+
+#answers li{
+    padding-top: 5px;
 }
