@@ -1,5 +1,6 @@
 class Form(object):
     def __init__(self):
+        #this is the header that is visible on the page1 and page2 views
         self.head = """
         <!DOCTYPE HTML>
         <html>
@@ -14,6 +15,7 @@ class Form(object):
                 <h1>Voters Registration form</h1>
             </div>
         """
+        #this is the body html for the form and inputs
         self.body = """
             <div id="criteria">
                 <h3>To register to vote you must:</h3>
@@ -141,6 +143,7 @@ class Form(object):
             </div>
 
         """
+        #this is the html that displays the answers from the form on page2
         self.body_page2 = """
             <div id="answers">
             <h2>{age}</h2>
@@ -155,6 +158,7 @@ class Form(object):
             <div>
 
         """
+        #this is the closing html for page1 and page2
         self.close = """
             <div class="footer>
                 <p>This form was created by Kristen Kozinski</p>
