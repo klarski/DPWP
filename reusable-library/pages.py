@@ -11,8 +11,8 @@ class FormPage(object):
         <body>
         """
         self.body = '''
-<h1>KimpMail</h1>
-<h3>Create your KimpMail Account</h3>
+<h1><a href="http://www.wired.com/2014/11/wtf-is-mailkimp-meme/" target=_blank >Kimp</a>Mail</h1>
+<h3>Create your <a href="http://www.urbandictionary.com/define.php?term=kimp&defid=5202823" target=_blank>Kimp</a>Mail Account</h3>
 <form>
     <ul>
         <li>
