@@ -57,7 +57,6 @@ class FormPage(object):
 
 </form>
 
-
         '''
         self.__close = """
         </body>
