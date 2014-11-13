@@ -1,5 +1,3 @@
-import datetime
-
 
 class FormCal(object):
     def __init__(self):
@@ -9,8 +7,12 @@ class FormCal(object):
         print d
         # check age entered into date field and see if user is over the age of 13
 
-    def password_match(self):
-        pass
+    def password_match(self, p1, p2):
+        print str(p1) + str(p2)
+        if p1 == p2:
+            return p1
+        else:
+            print "The passwords do not match"
         #check to see if password entered in password field matched password entered in the verify password field
 
 

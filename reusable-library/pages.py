@@ -7,56 +7,65 @@ class FormPage(object):
     <html>
         <head>
             <title>{self.title}</title>
+            <link href="css/main.css" rel="stylesheet" type="text/css" />
+            <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
         </head>
         <body>
         """
         self.body = '''
-<h1><a href="http://www.wired.com/2014/11/wtf-is-mailkimp-meme/" target=_blank >Kimp</a>Mail</h1>
-<h3>Create your <a href="http://www.urbandictionary.com/define.php?term=kimp&defid=5202823" target=_blank>Kimp</a>Mail Account</h3>
-<form>
+<img src="images/kimpmail.png" alt="KimpMail" width="400"/>
+<div id="header">
     <ul>
-        <li>
-            <label>First Name:</label>
-            <input class="text" type="text" name="fname"/>
-        </li>
-
-        <li>
-            <label>Last Name: </label>
-            <input class="text" type="text" name="lname"/>
-        </li>
-
-        <li>
-            <label>Date of Birth:</label>
-            <input class="date" type="date" name="dob">
-        </li>
-
-        <li>
-            <label>Username:</label>
-            <input class="text" type="text" name="username"><p>@kimpmail.com</p>
-        </li>
-
-        <li>
-            <label>Password:</label>
-            <input class="text" type="password" name="password">
-        </li>
-
-        <li>
-            <label>Verify Password:</label>
-             <input class="text" type="password" name="verify-password">
-       </li>
-
-        <li>
-            <label>Prove that you are not a Robot:</label>
-            <input class="text" type="password" name="verify-password">
-       </li>
-
-        <li>
-            <button class="submit" type="submit" value="Submit" />Sign me up!</button>
-        </li>
+        <li>Log In</li>
+        <li> About</li>
     </ul>
+</div>
 
-</form>
+<h3>Create your <a href="http://www.urbandictionary.com/define.php?term=kimp&defid=5202823" target=_blank>Kimp</a>Mail Account:</h3>
+<div id="form">
+    <form>
+        <ul>
+            <li>
+                <label>First Name:</label>
+                <input class="text" type="text" name="fname"/>
+            </li>
 
+            <li>
+                <label>Last Name: </label>
+                <input class="text" type="text" name="lname"/>
+            </li>
+
+            <li>
+                <label>Date of Birth:</label>
+                <input class="date" type="date" name="dob">
+            </li>
+
+            <li>
+                <label>Username:</label>
+                <input class="text" type="text" name="username"><span>@kimpmail.com</span>
+            </li>
+
+            <li>
+                <label>Password:</label>
+                <input class="text" type="password" name="password">
+            </li>
+
+            <li>
+                <label>Verify Password:</label>
+                 <input class="text" type="password" name="verify-password">
+           </li>
+
+            <li>
+                <label>Prove that you are not a Robot:</label>
+                <input class="text" type="number" name="robot">
+           </li>
+
+            <li>
+                <button class="submit" type="submit" value="Submit" />Sign me up!</button>
+            </li>
+        </ul>
+    </form>
+<div>
         '''
         self.__close = """
         </body>

@@ -23,7 +23,9 @@ class MainHandler(webapp2.RequestHandler):
             data.username = self.request.GET['username']
             data.password = self.request.GET['password']
             data.ver_password = self.request.GET['verify-password']
+            data.robot = self.request.GET['robot']
             lib.age_check(data.dob)
+            lib.password_match(data.password, data.ver_password)
         else:
             self.response.write(f.print_out())
 
