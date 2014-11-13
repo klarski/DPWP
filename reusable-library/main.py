@@ -6,10 +6,13 @@ Assignment: Reusable Library
 '''
 
 import webapp2
+from pages import FormPage
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        f = FormPage()
+        self.response.write(f.print_out())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
