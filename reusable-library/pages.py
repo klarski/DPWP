@@ -21,7 +21,7 @@ class FormPage(object):
     </ul>
 </div>
 
-<h3>Create your <a href="http://www.urbandictionary.com/define.php?term=kimp&defid=5202823" target=_blank>Kimp</a>Mail Account:</h3>
+<h3>Create your KimpMail Account:</h3>
 <div id="form">
     <form>
         <ul>

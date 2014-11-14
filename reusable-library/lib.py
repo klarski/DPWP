@@ -1,10 +1,21 @@
+from datetime import datetime
+
 
 class FormCal(object):
     def __init__(self):
         pass
 
     def age_check(self, d):
-        print d
+        date_format = "%Y-%m-%d"
+        dob = datetime.strptime(d, date_format)
+        current_date = datetime.today()
+        age = abs((current_date-dob).days)
+        if int(age) >= (13*365):
+            print "Yeah!, You are old enough"
+            return d
+        else:
+            print "You are not old enough"
+
         # check age entered into date field and see if user is over the age of 13
 
     def password_match(self, p1, p2):
