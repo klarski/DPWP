@@ -1,13 +1,11 @@
 class FormPage(object):
     def __init__(self):
-        self.title = "KimpMail.com"
-        self.css = "css/main.css"
         self.head = """
     <!DOCTYPE HTML>
     <html>
         <head>
-            <title></title>
-            <link href="{self.css}" rel="stylesheet" type="text/css" />
+            <title>KimpMail.com</title>
+            <link href="css/main.css" rel="stylesheet" type="text/css" />
             <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
         </head>
         <body>
@@ -96,15 +94,16 @@ class ResultsPage(object):
         <li>ABOUT</li>
     </ul>
 </div>
-
-<h3>Verify your information:</h3>
-    <ul>
-        <li>First Name: {data.fname}</li>
-        <li>Last Name: {data.lname}</li>
-        <li>Date of Birth: {data.dob}</li>
-        <li>Username: {data.username}</li>
-        <li>Password: {data.password}</li>
-    </ul>
+<div>
+    <h3>Verify your information:</h3>
+        <ul>
+            <li>First Name: {data.fname}</li>
+            <li>Last Name: {data.lname}</li>
+            <li>Date of Birth: {data.dob}</li>
+            <li>Username: {data.username}</li>
+            <li>Password: {data.password}</li>
+        </ul>
+</div>
         '''
         self.close = """
         </body>
