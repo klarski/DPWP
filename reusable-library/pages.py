@@ -16,8 +16,8 @@ class FormPage(object):
 <img src="images/kimpmail.png" alt="KimpMail" width="400"/>
 <div id="header">
     <ul>
-        <li>Log In</li>
-        <li> About</li>
+        <li>LOGIN</li>
+        <li>ABOUT</li>
     </ul>
 </div>
 
@@ -55,8 +55,8 @@ class FormPage(object):
                  <input class="text" type="password" name="verify-password">
            </li>
 
-            <li>
-                <label>Prove that you are not a Robot:</label>
+            <li id="robot">
+                <label>Prove that you are not a Robot:</label><span><img src=images/robot.jpg width="100" /></span>
                 <input class="text" type="number" name="robot">
            </li>
 
@@ -78,4 +78,4 @@ class FormPage(object):
 
 class ResultsPage(object):
     def __init__(self):
-        pass
+       pass

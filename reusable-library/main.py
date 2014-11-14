@@ -26,6 +26,7 @@ class MainHandler(webapp2.RequestHandler):
             data.robot = self.request.GET['robot']
             lib.age_check(data.dob)
             lib.password_match(data.password, data.ver_password)
+            lib.robot_check(data.robot)
         else:
             self.response.write(f.print_out())
 
