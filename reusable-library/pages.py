@@ -1,5 +1,6 @@
 class FormPage(object):
     def __init__(self):
+        # this is the header for the form page
         self.head = """
     <!DOCTYPE HTML>
     <html>
@@ -10,6 +11,7 @@ class FormPage(object):
         </head>
         <body>
         """
+        # this is the body html for the form and inputs
         self.body = '''
 <img src="images/kimpmail.png" alt="KimpMail" width="400"/>
 <div id="header">
@@ -65,10 +67,12 @@ class FormPage(object):
     </form>
 <div>
         '''
+        # this is the closing html for the form page
         self.__close = """
         </body>
     </html>
         """
+        # this method returns all the html to be written to the page
     def print_out(self):
         all = self.head + self.body + self.__close
         return all
@@ -76,6 +80,7 @@ class FormPage(object):
 
 class ResultsPage(object):
     def __init__(self):
+        # this is the header html for the results page
         self.head = """
     <!DOCTYPE HTML>
     <html>
@@ -86,6 +91,7 @@ class ResultsPage(object):
         </head>
         <body>
         """
+         # this is the body html for the results page
         self.body = '''
 <img src="images/kimpmail.png" alt="KimpMail" width="400"/>
 <div id="header">
@@ -107,6 +113,7 @@ class ResultsPage(object):
             <button class="submit">Submit</button>
     </div>
         '''
+         # this is the closing html for the results page
         self.close = """
         </body>
     </html>
