@@ -19,47 +19,47 @@ class FormPage(object):
     </ul>
 </div>
 
-<h3>Create your KimpMail Account:</h3>
-<div id="form">
+<h2>Create your KimpMail Account:</h2>
+<div id="form" method="GET">
     <form>
         <ul>
             <li>
                 <label>First Name:</label>
-                <input class="text" type="text" name="fname"/>
+                <input class="text" type="text" name="fname" required/>
             </li>
 
             <li>
                 <label>Last Name: </label>
-                <input class="text" type="text" name="lname"/>
+                <input class="text" type="text" name="lname" required/>
             </li>
 
             <li>
                 <label>Date of Birth:</label>
-                <input class="date" type="date" name="dob">
+                <input class="date" type="date" name="dob" required>
             </li>
 
             <li>
                 <label>Username:</label>
-                <input class="text" type="text" name="username"><span>@kimpmail.com</span>
+                <input class="text" type="text" name="username" required><span>@kimpmail.com</span>
             </li>
 
             <li>
                 <label>Password:</label>
-                <input class="text" type="password" name="password">
+                <input class="text" type="password" name="password" required>
             </li>
 
             <li>
                 <label>Verify Password:</label>
-                 <input class="text" type="password" name="verify-password">
+                 <input class="text" type="password" name="verify-password" required>
            </li>
 
             <li id="robot">
-                <label>Prove that you are not a Robot:</label><span><img src=images/robot.jpg width="100" /></span>
-                <input class="text" type="number" name="robot">
+                <label>Prove that you are not a Robot:<span><img src=images/robot.jpg width="100" /></span></label>
+                <input class="text" type="number" name="robot" required>
            </li>
 
             <li>
-                <button class="submit" type="submit" value="Submit" />Sign me up!</button>
+                <button id="form-btn" class="submit" type="submit" value="Submit" />Sign me up!</button>
             </li>
         </ul>
     </form>
@@ -94,16 +94,18 @@ class ResultsPage(object):
         <li>ABOUT</li>
     </ul>
 </div>
-<div>
-    <h3>Verify your information:</h3>
-        <ul>
-            <li>First Name: {data.fname}</li>
-            <li>Last Name: {data.lname}</li>
-            <li>Date of Birth: {data.dob}</li>
-            <li>Username: {data.username}</li>
-            <li>Password: {data.password}</li>
-        </ul>
-</div>
+    <h2>Verify your information:</h2>
+        <div id="form-data">
+            <ul>
+                <li>First Name: {data.fname}</li>
+                <li>Last Name: {data.lname}</li>
+                <li>Date of Birth: {data.dob}</li>
+                <li>Username: {data.username}</li>
+                <li>Password: {data.password}</li>
+            </ul>
+            <button class="submit">Edit Information</button>
+            <button class="submit">Submit</button>
+    </div>
         '''
         self.close = """
         </body>

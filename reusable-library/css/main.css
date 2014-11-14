@@ -8,6 +8,10 @@ h1, h2, h3, h4, p, label, span, li{
   font-family: 'Josefin Sans', sans-serif;
 }
 
+p, li, label{
+    font-size: 18px;
+}
+
 #header{
 	width: 100%;
 	background-color: #ccc;
@@ -34,15 +38,16 @@ img {
 
 label {
 	margin-top: 10px;
-    width: 220px;
+    width: 360px;
 	display: inline-block;
 	float: left;
 }
 
 #robot span {
     clear: both;
-    float: left;
-    margin-top: -50px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 15px;
 }
 
 li {
@@ -53,8 +58,8 @@ a {
 	text-decoration: none;
 }
 
-#form {
-	margin-left: 30%;
+#form, #form-data {
+	margin-left: 25%;
 	margin-right: auto;
 }
 
@@ -68,7 +73,7 @@ input{
 }
 
 
-h3{
+h2{
 	text-align: center;
 }
 
@@ -85,6 +90,10 @@ button.submit {
     font-weight: bold;
     padding: 10px 30px;
     text-align: center;
-    margin-left: 2%;
-    margin-top: 10px;
+    margin-top: 20px;
+    clear: both;
+}
+
+#form-btn {
+    margin-left: 40%
 }
