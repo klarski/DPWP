@@ -6,7 +6,7 @@ Assignment: Reusable Library
 '''
 
 import webapp2
-from pages import FormPage
+from pages import FormPage, ResultsPage
 from lib import FormData, FormCal
 
 
@@ -15,6 +15,7 @@ class MainHandler(webapp2.RequestHandler):
         f = FormPage()
         data = FormData()
         lib = FormCal()
+        results = ResultsPage()
 
         if self.request.GET:
             data.fname = self.request.GET['fname']
@@ -24,9 +25,14 @@ class MainHandler(webapp2.RequestHandler):
             data.password = self.request.GET['password']
             data.ver_password = self.request.GET['verify-password']
             data.robot = self.request.GET['robot']
-            lib.age_check(data.dob)
-            lib.password_match(data.password, data.ver_password)
-            lib.robot_check(data.robot)
+
+            data.dob = lib.age_check(data.dob)
+            data.password = lib.password_match(data.password, data.ver_password)
+            data.robot = lib.robot_check(data.robot)
+
+            all = results.head + results.body + results.close
+            all_answers = all.format(**locals())
+            self.response.write(all_answers)
         else:
             self.response.write(f.print_out())
 

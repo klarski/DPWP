@@ -14,7 +14,7 @@ class FormCal(object):
             print "Yeah!, You are old enough"
             return d
         else:
-            print "You are not old enough"
+            return "You are not old enough"
 
         # check age entered into date field and see if user is over the age of 13
     def password_match(self, p1, p2):
@@ -22,7 +22,7 @@ class FormCal(object):
         if p1 == p2:
             return p1
         else:
-            print "The passwords do not match"
+            return "The passwords do not match"
         #check to see if password entered in password field matched password entered in the verify password field
 
     def robot_check(self, r):
@@ -30,14 +30,15 @@ class FormCal(object):
             print "You look legit"
             return r
         else:
-            print "It looks like you might not be human"
+            return "It looks like you might not be human"
 
 
 class FormData(object):
     def __init__(self):
         self.fname = ''
         self.lname = ''
-        self.dob = 01/01/1900
+        self.dob = 01/01/2014
         self.username = ''
         self.password = ''
         self.ver_password = ''
+

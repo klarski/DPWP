@@ -1,13 +1,13 @@
 class FormPage(object):
     def __init__(self):
-        self.title = "Welcome"
-        self.css = ""
+        self.title = "KimpMail.com"
+        self.css = "css/main.css"
         self.head = """
     <!DOCTYPE HTML>
     <html>
         <head>
-            <title>{self.title}</title>
-            <link href="css/main.css" rel="stylesheet" type="text/css" />
+            <title></title>
+            <link href="{self.css}" rel="stylesheet" type="text/css" />
             <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
         </head>
         <body>
@@ -78,4 +78,35 @@ class FormPage(object):
 
 class ResultsPage(object):
     def __init__(self):
-       pass
+        self.head = """
+    <!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>KimpMail.com</title>
+            <link href="css/main.css" rel="stylesheet" type="text/css" />
+            <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+        </head>
+        <body>
+        """
+        self.body = '''
+<img src="images/kimpmail.png" alt="KimpMail" width="400"/>
+<div id="header">
+    <ul>
+        <li>LOGIN</li>
+        <li>ABOUT</li>
+    </ul>
+</div>
+
+<h3>Verify your information:</h3>
+    <ul>
+        <li>First Name: {data.fname}</li>
+        <li>Last Name: {data.lname}</li>
+        <li>Date of Birth: {data.dob}</li>
+        <li>Username: {data.username}</li>
+        <li>Password: {data.password}</li>
+    </ul>
+        '''
+        self.close = """
+        </body>
+    </html>
+        """
