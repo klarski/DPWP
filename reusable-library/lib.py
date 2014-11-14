@@ -46,65 +46,65 @@ class FormData(object):
         self.__ver_password = ''
         self.__robot = 0
 # above sets up the attributes for the fields in the form- everything is set to private for encapsulating the form info
-
+# Getter for first name (fname)
     @property
     def fname(self):
         return self.__fname
-
+#setter for first name (fname)
     @fname.setter
     def fname(self, f):
         self.__fname = f
 
-
+# getter for last name (lname)
     @property
     def lname(self):
         return self.__lname
-
+# setter for last name (lname)
     @lname.setter
     def lname(self, l):
         self.__lname = l
 
-
+#getter for date of birth (dob)
     @property
     def dob(self):
         return self.__dob
-
+# setter for date of birth (dob)
     @dob.setter
     def dob(self, d):
         self.__dob = d
 
-
+# getter for username
     @property
     def username(self):
         return self.__username
-
+# setter for username
     @username.setter
     def username(self, u):
         self.__username = u
 
-
+# getter for password
     @property
     def password(self):
         return self.__password
-
+# setter for password
     @password.setter
     def password(self, p):
         self.__password = p
 
-
+# getter for password verification (ver_password)
     @property
     def ver_password(self):
         return self.__ver_password
-
+# setter for password verification (ver_password)
     @ver_password.setter
     def ver_password(self, v):
         self.__ver_password = v
 
-
+# getter for human verification (robot)
     @property
     def robot(self):
         return self.__robot
-
+# setter for human verification (robot)
     @robot.setter
     def robot(self, r):
         self.__robot = r
