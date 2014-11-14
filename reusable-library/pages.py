@@ -109,8 +109,8 @@ class ResultsPage(object):
                 <li>Username: {data.username}</li>
                 <li>Password: {data.password}</li>
             </ul>
-            <button class="submit">Edit Information</button>
-            <button class="submit">Submit</button>
+            <button id="result-btn" class="submit">Edit Information</button>
+            <button id="result-btn" class="submit">Submit</button>
     </div>
         '''
          # this is the closing html for the results page

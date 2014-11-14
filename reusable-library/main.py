@@ -3,6 +3,11 @@ Name: Kristen Kozinski
 Date: 11/13/2014
 Class: Design Patterns for Web Programming
 Assignment: Reusable Library
+
+The Kimpmail name was inspired by the MailChimp ad for the Serial radio show and all the different ways people will
+refer to MailChimp when writing into support (chimpmail, monkeymail, etc). I am hopping to build out this idea further
+after the class is over as a unique portfolio piece to show our dev team.
+Read more about that here: http://mashable.com/2014/11/12/marchimp-mailkimp-meme/?utm_cid=mash-com-fb-main-link
 '''
 
 import webapp2

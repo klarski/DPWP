@@ -58,9 +58,15 @@ a {
 	text-decoration: none;
 }
 
-#form, #form-data {
+#form {
 	margin-left: 25%;
 	margin-right: auto;
+}
+
+#form-data{
+    margin-left: 30%;
+    margin-right: auto;
+}
 }
 
 #form li {
@@ -96,4 +102,9 @@ button.submit {
 
 #form-btn {
     margin-left: 40%
+}
+
+#result-btn{
+    margin-left: 20px;
+    margin-right: 20px;
 }
