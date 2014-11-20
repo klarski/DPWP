@@ -1,0 +1,47 @@
+body {
+	margin: 0 auto;
+	width: 100%;
+	color: #000;
+}
+
+#header {
+	background-color: #1e7061;
+	width: 100%;
+	height: 80px;
+}
+
+#header img {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#header ul {
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -35px;
+	margin-right: 20px;
+}
+
+#header li{
+	float: left;
+	margin: 0 10px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	font-size: 20px;
+}
+
+#coffee-bags img{
+	margin: 5px 10px;
+}
+
+.product{
+	float: left
+}
+
+#coffee-bags {
+	margin-top: 50px;
+	margin-left: 20%;
+	margin-right: 15%;
+}

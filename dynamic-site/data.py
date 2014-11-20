@@ -9,7 +9,51 @@ class CoffeeTypes(object):
 
     @property
     def name(self):
-       return self._name
+        return self._name
+
+    @name.setter
+    def name(self, n):
+        self._name = n
+
+    @property
+    def price(self):
+        return self._price
+
+    @name.setter
+    def name(self, p):
+        self._price = p
+
+    @property
+    def roast(self):
+        return self._roast
+
+    @name.setter
+    def name(self, rst):
+        self._name = rst
+
+    @property
+    def regions(self):
+        return self._regions
+
+    @name.setter
+    def name(self, rgn):
+        self._regions = rgn
+
+    @property
+    def flavors(self):
+        return self._flavors
+
+    @name.setter
+    def name(self, f):
+        self._flavors = f
+
+    @property
+    def weight(self):
+        return self._weight
+
+    @name.setter
+    def name(self, w):
+        self._weight = w
 
 
 class BrooklynBlend(CoffeeTypes):
