@@ -7,6 +7,11 @@ class CoffeeTypes(object):
         self._flavors = ""
         self._weight = 16
 
+    @property
+    def name(self):
+       return self._name
+
+
 class BrooklynBlend(CoffeeTypes):
     def __init__(self):
         super(CoffeeTypes, self).__init__()

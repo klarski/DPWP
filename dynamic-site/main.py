@@ -6,10 +6,12 @@ Assignment: Dynamic Site
 '''
 
 import webapp2
+from data import CoffeeTypes
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        c = CoffeeTypes()
+        self.response.write("Test")
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
