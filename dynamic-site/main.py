@@ -13,6 +13,12 @@ from pages import Page
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = Page()
+        c = CoffeeTypes()
+        bb = BrooklynBlend()
+
+        bb.name = self.request.GET['name']
+        c.coffee_values(bb)
+
 
         self.response.write(p.print_out())
 

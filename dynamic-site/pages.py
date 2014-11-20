@@ -20,7 +20,14 @@ class Page(object):
         </div>
         '''
         self.product_view = '''
-        <div>
+        <div id="feat-product">
+            <img src="http://placehold.it/350x350" width="350"/>
+            <div id="feat-info">
+                <h3>{name}</h3><span>{price}</span>
+                <p>Roast: {roast}</p>
+                <p>Regions: {regions}</p>
+                <p>Flavors: {flavors}</p>
+            </div>
 
         </div>
         '''
@@ -28,50 +35,32 @@ class Page(object):
         <div id="coffee-bags">
             <div class="product">
                 <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><p>{price}</p>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
+                <h3>{name}</h3><span>{price}</span>
             </div>
 
             <div class="product">
                 <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><p>{price}</p>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
+                <h3>{name}</h3><span>{price}</span>
             </div>
 
             <div class="product">
                 <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><p>{price}</p>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
+                <h3>{name}</h3><span>{price}</span>
             </div>
 
             <div class="product">
                 <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><p>{price}</p>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
+                <h3>{name}</h3><span>{price}</span>
             </div>
 
             <div class="product">
                 <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><p>{price}</p>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
+                <h3>{name}</h3><span>{price}</span>
             </div>
 
             <div class="product">
                 <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><p>{price}</p>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
+                <h3>{name}</h3><span>{price}</span>
             </div>
         </div>
 
