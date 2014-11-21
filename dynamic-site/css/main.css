@@ -38,9 +38,8 @@ body {
 	margin-top: 20px;
 }
 
-#feat-info {
-	clear: both;
-	float: right;
+.feat-info {
+	float: left;
 }
 
 #coffee-bags img{

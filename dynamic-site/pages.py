@@ -19,16 +19,27 @@ class Page(object):
             </ul>
         </div>
         '''
+        self.body = ""
+        self.close = '''
+        </body>
+        </html>
+        '''
+
+    def print_out(self):
+        return self.head + self.header + self.body + self.close
+
+class ContentPage(Page):
+    def __init__(self):
+        Page.__init__(self)
         self.product_view = '''
         <div id="feat-product">
             <img src="http://placehold.it/350x350" width="350"/>
-            <div id="feat-info">
-                <h3>{name}</h3><span>{price}</span>
-                <p>Roast: {roast}</p>
-                <p>Regions: {regions}</p>
-                <p>Flavors: {flavors}</p>
-            </div>
-
+                <div class="feat-info">
+                    <h3>{name}</h3><span>{price}</span>
+                    <p>Roast: {roast}</p>
+                    <p>Regions: {regions}</p>
+                    <p>Flavors: {flavors}</p>
+                </div>
         </div>
         '''
         self.body = '''
@@ -63,13 +74,7 @@ class Page(object):
                 <h3>{name}</h3><span>{price}</span>
             </div>
         </div>
-
-        '''
-        self.close = '''
-        </body>
-        </html>
         '''
 
     def print_out(self):
-        all = self.head + self.header + self.product_view + self.body + self.close
-        return all
+        return self.head + self.header + self.product_view + self.body + self.close

@@ -6,6 +6,8 @@ class CoffeeTypes(object):
         bost_b = BostonBlend()
         sb = SanFranBlend()
 
+
+
 class BrooklynBlend(object):
     def __init__(self):
         self._name = "Brooklyn Blend"
