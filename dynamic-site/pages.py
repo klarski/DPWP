@@ -14,8 +14,8 @@ class Page(object):
         <div id="header">
             <img src="images/hhc.png" alt="logo" width="300"/>
             <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li><a href="http://klarski.github.io/handsome-hipster/index.html" target=_blank >Home</a></li>
+                <li><a href="http://klarski.github.io/handsome-hipster/index.html#about" target=_blank>About</a></li>
                 <li>Store</li>
             </ul>
         </div>
@@ -23,6 +23,18 @@ class Page(object):
         self.main_product = ""
         self.all_the_coffee = ""
         self.close = '''
+        <footer>
+            <div class="image-credit">
+                <h3>Image Credits</h3>
+                    <ul>
+                      <li><a href="https://flic.kr/p/97JMPT" target="_blank">Brooklyn Blend</a></br></li>
+                      <li><a href="https://flic.kr/p/eppLDF" target="_blank">Portland Blend</a></br></li>
+                      <li><a href="https://flic.kr/p/eeQ6RR" target="_blank">Austin Blend</a></br></li>
+                      <li><a href="https://flic.kr/p/bW9MmR" target="_blank">Boston Blend</a></br></li>
+                      <li><a href="https://flic.kr/p/9BbeEa" target="_blank">SanFran Blend</a></br></li>
+                    <ul>
+              </div>
+        </footer>
         </body>
         </html>
         '''
