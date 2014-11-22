@@ -70,6 +70,23 @@ h1{
 	padding-left: 100px;
 }
 
+button {
+	width: 150px;
+	font-size: 16px;
+    background-color: #2ec288;
+    color: #fff;
+    border: 1px solid #2ec266;
+    border-radius: 5px;
+    webkit-border-radius: 5px;
+    moz-border-radius: 5px;
+    ms-border-radius: 5px;
+    o-border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+    clear: both;
+}
+
 
 #coffee-bags img{
 	margin: 5px 10px;

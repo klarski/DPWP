@@ -16,7 +16,7 @@ class Page(object):
             <ul>
                 <li><a href="http://klarski.github.io/handsome-hipster/index.html" target=_blank >Home</a></li>
                 <li><a href="http://klarski.github.io/handsome-hipster/index.html#about" target=_blank>About</a></li>
-                <li>Store</li>
+                <li>Cart</li>
             </ul>
         </div>
         '''
@@ -47,7 +47,7 @@ class ContentPage(Page):
         Page.__init__(self)
 
     def product_view(self, main_p):
-        self.main_product = '<div class="feat-product"><img src="' + main_p.image + '" width="300"/><h1>' + main_p.name + '</h2><h3>$' + str(main_p.price) + '</h3><p>Roast: ' + main_p.roast + '</br>Regions: ' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p></div>'
+        self.main_product = '<div class="feat-product"><img src="' + main_p.image + '" width="300"/><h1>' + main_p.name + '</h2><h3>$' + str(main_p.price) + '</h3><p>Roast: ' + main_p.roast + '</br>Regions: ' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p><button>Add to Cart</button></div>'
 
 
     def coffee_buttons(self, a):
