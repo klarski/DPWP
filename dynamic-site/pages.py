@@ -1,5 +1,6 @@
 class Page(object):
     def __init__(self):
+        # this is my page head information
         self.head = '''<!DOCTYPE HTML>
         <html>
         <head>
@@ -10,6 +11,7 @@ class Page(object):
         </head>
         <body>
         '''
+        # this is the header section for my page, it contains the logo and the navigation. I have linked the Home and the About pages to a previous project I created for Handsome Hipster
         self.header = '''
         <div id="header">
             <img src="images/hhc.png" alt="logo" width="300"/>
@@ -20,8 +22,11 @@ class Page(object):
             </ul>
         </div>
         '''
+        # this is going to hold my main_product html
         self.main_product = ""
+        # this is going to hold the html for all of the different coffee bags
         self.all_the_coffee = ""
+        #this is the closing for the page and contains the footer. I used images from Flikr Creative Commons so I attributed them
         self.close = '''
         <footer>
             <div class="image-credit">
@@ -44,6 +49,7 @@ class Page(object):
         </html>
         '''
 
+# the print_out function concatenates all the peices of my html page togeather and returns the full page.
     def print_out(self):
         return self.head + self.header + self.main_product + self.all_the_coffee + self.close
 
