@@ -35,7 +35,7 @@ class ContentPage(Page):
         Page.__init__(self)
         self.button = ""
     def product_view(self, main_p):
-        self.main_product = '<div id="feat-product"><img src="' + main_p.image + '" width="300"/><div class="feat-info"><h1>' + main_p.name + '</h2><h3>Price</h3><p>Roast: ' + main_p.roast + '</br>Regions :' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p></div></div>'
+        self.main_product = '<div class="feat-product"><img src="' + main_p.image + '" width="300"/><h1>' + main_p.name + '</h2><h3>$' + str(main_p.price) + '</h3><p>Roast: ' + main_p.roast + '</br>Regions: ' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p></div>'
 
         self.body = '''
 
