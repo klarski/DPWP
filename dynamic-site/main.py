@@ -3,6 +3,8 @@ Name: Kristen Kozinski
 Date: 11/20/2014
 Class: Design Patterns for Web Programming
 Assignment: Dynamic Site
+
+My project is based on a store for a fictional company that I created called Handsome Hipster Coffee Roasters. I have created projects for past classes for Handsome Hipster Coffee Roasters. The only thing borrowed from the past project was the brand assets (logo and branding styles- ie font styles and colors).
 '''
 
 import webapp2

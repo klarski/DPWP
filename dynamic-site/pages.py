@@ -16,9 +16,9 @@ class Page(object):
         <div id="header">
             <img src="images/hhc.png" alt="logo" width="300"/>
             <ul>
-                <li><a href="http://klarski.github.io/handsome-hipster/index.html" target=_blank >Home</a></li>
-                <li><a href="http://klarski.github.io/handsome-hipster/index.html#about" target=_blank>About</a></li>
-                <li>Cart</li>
+                <li><a href="http://klarski.github.io/handsome-hipster/index.html" target=_blank >HOME</a></li>
+                <li><a href="http://klarski.github.io/handsome-hipster/index.html#about" target=_blank>ABOUT</a></li>
+                <li>CART</li>
             </ul>
         </div>
         '''
