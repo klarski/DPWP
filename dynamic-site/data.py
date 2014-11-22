@@ -4,7 +4,7 @@ class CoffeeTypes(object):
         self.add_coffee_array()
 
     def add_coffee_array(self):
-        bb = BostonBlend()
+        bb = BrooklynBlend()
         pb = PortlandBlend()
         ab = AustinBlend()
         bost_b = BostonBlend()
@@ -25,7 +25,7 @@ class BrooklynBlend(object):
         self._roast = "Medium-Bold"
         self.regions = "Guatemala, Rwanda"
         self.flavors = "Sweet, Chocolate, Soft nutty"
-        self.img = "images/coffee1.jpg"
+        self.image = "images/coffee1.jpg"
 
     @property
     def name(self):
