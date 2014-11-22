@@ -33,7 +33,12 @@ class Page(object):
                       <li><a href="https://flic.kr/p/bW9MmR" target="_blank">Boston Blend</a></br></li>
                       <li><a href="https://flic.kr/p/9BbeEa" target="_blank">SanFran Blend</a></br></li>
                     <ul>
-              </div>
+            </div>
+
+            <div class="att">
+                <h3>Attribution</h3>
+                <p>Handsome Hipster Coffee Roasters is a fictional company. This site was create by <a href="http://kristenmakeswebsites.com" target="_blank">Kristen Kozinski</a> for a class at <a href="http://fullsail.edu" target="_blank">Full Sail University</a>. All videos and images used in this website fall under a <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons license</a> and are avalible to use and adapt for non-commercial purposes.</p>
+          </div>
         </footer>
         </body>
         </html>
@@ -47,7 +52,7 @@ class ContentPage(Page):
         Page.__init__(self)
 
     def product_view(self, main_p):
-        self.main_product = '<div class="feat-product"><img src="' + main_p.image + '" width="300"/><h1>' + main_p.name + '</h2><h3>$' + str(main_p.price) + '</h3><p>Roast: ' + main_p.roast + '</br>Regions: ' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p><button>Add to Cart</button></div>'
+        self.main_product = '<div class="feat-product"><img src="' + main_p.image + '" width="300"/><h1>' + main_p.name + '</h2><h3>$' + str(main_p.price) + ' for a 1lb bag</h3><p>Roast: ' + main_p.roast + '</br>Regions: ' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p><button>Add to Cart</button></div>'
 
 
     def coffee_buttons(self, a):

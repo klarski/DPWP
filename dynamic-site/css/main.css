@@ -122,10 +122,14 @@ footer {
 	background-color: #278E7B;
 }
 
-.image-credit{
+.image-credit, .att{
 	margin-left: 15%;
 	margin-right: 15%;
-	padding: 20px 0 
+	padding: 30px 0 
+}
+
+.image-credit {
+	float: left;
 }
 
 footer a {
