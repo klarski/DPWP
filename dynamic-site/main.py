@@ -16,6 +16,14 @@ class MainHandler(webapp2.RequestHandler):
         p = ContentPage()
         c = CoffeeTypes()
 
+        if self.request.GET:
+            name == self.request.GET['name']
+                if name == 'Brooklyn Blend':
+                    p.product_view()
+                else:
+                    pass
+        else:
+            pass
 
         p.coffee_buttons(c.blends_arr)
         self.response.write(p.print_out())

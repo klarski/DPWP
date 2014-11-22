@@ -25,6 +25,7 @@ class BrooklynBlend(object):
         self._roast = "Medium-Bold"
         self.regions = "Guatemala, Rwanda"
         self.flavors = "Sweet, Chocolate, Soft nutty"
+        self.img = "images/coffee1.jpg"
 
     @property
     def name(self):
@@ -50,6 +51,7 @@ class PortlandBlend(object):
         self._roast = "Light"
         self.regions = "Malawi,  Guatemala"
         self.flavors = "Notes of chocolate and berries, citrus marmalade finish"
+        self.image = "images/coffee2.jpg"
 
     @property
     def name(self):
@@ -75,6 +77,7 @@ class AustinBlend(object):
         self._roast = "Medium"
         self.regions = "Rwanda, India"
         self.flavors = "spicy, cinnamon, nutmeg"
+        self.image = "images/coffee3.jpg"
 
     @property
     def name(self):
@@ -100,6 +103,7 @@ class BostonBlend(object):
         self._roast = "Bold"
         self.regions = "Peru, Columbia"
         self.flavors = "nutty, spicy, floral, fruity"
+        self.image = "images/coffee4.jpg"
 
     @property
     def name(self):
@@ -125,6 +129,7 @@ class SanFranBlend(object):
         self._roast = "Dark"
         self.regions = "Rwanda, Honduras"
         self.flavors = "Chocolate, subtly sweet, floral, fruity"
+        self.image = "images/coffee5.jpg"
 
     @property
     def name(self):

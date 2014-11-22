@@ -32,16 +32,17 @@ class ContentPage(Page):
     def __init__(self):
         Page.__init__(self)
         self.button = ""
-        self.product_view = '''
-        <div id="feat-product">
-            <img src="http://placehold.it/350x350" width="350"/>
-                <div class="feat-info">
-                    <p>Roast: </br>
-                    Regions: </br>
-                    Flavors: </p>
-                </div>
-        </div>
-        '''
+    def product_view(self, main_p):
+        self.main_product = '''
+             <div id="feat-product">
+                <img src="http://placehold.it/350x350" width="350"/>
+                    <div class="feat-info">
+                        <p>Roast: </br>
+                            Regions: </br>
+                            Flavors: </p>
+                    </div>
+            </div>
+                '''
         self.body = '''
 
         '''
