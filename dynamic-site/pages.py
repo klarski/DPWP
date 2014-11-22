@@ -19,7 +19,6 @@ class Page(object):
             </ul>
         </div>
         '''
-        self.body = ""
         self.main_product = ""
         self.all_the_coffee = ""
         self.close = '''
@@ -27,19 +26,16 @@ class Page(object):
         </html>
         '''
 
-    # def print_out(self):
-    #     return self.head + self.header + self.main_product + self.body + self.close
+    def print_out(self):
+        return self.head + self.header + self.main_product + self.all_the_coffee + self.close
 
 class ContentPage(Page):
     def __init__(self):
         Page.__init__(self)
-        self.button = ""
+
     def product_view(self, main_p):
         self.main_product = '<div class="feat-product"><img src="' + main_p.image + '" width="300"/><h1>' + main_p.name + '</h2><h3>$' + str(main_p.price) + '</h3><p>Roast: ' + main_p.roast + '</br>Regions: ' + main_p.regions + '</br>Flavors: ' + main_p.flavors + '</p></div>'
 
-        self.body = '''
-
-        '''
 
     def coffee_buttons(self, a):
         self.coffee_thumb_div = '<div id="coffee-bags">'

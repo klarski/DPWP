@@ -18,12 +18,6 @@ class MainHandler(webapp2.RequestHandler):
 
         p.coffee_buttons(c.blends_arr)
 
-        print c.blends_arr[0].name
-        print c.blends_arr[1].name
-        print c.blends_arr[2].name
-        print c.blends_arr[3].name
-        print c.blends_arr[4].name
-
         if self.request.GET:
             name = self.request.GET['name']
             if name == 'Brooklyn Blend':
