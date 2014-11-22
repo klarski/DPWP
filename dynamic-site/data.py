@@ -1,12 +1,22 @@
 class CoffeeTypes(object):
     def __init__(self):
+        self.blends_arr = []
+        self.add_coffee_array()
+
+    def add_coffee_array(self):
         bb = BostonBlend()
         pb = PortlandBlend()
         ab = AustinBlend()
         bost_b = BostonBlend()
         sb = SanFranBlend()
 
+        self.blends_arr.append(bb)
+        self.blends_arr.append(pb)
+        self.blends_arr.append(ab)
+        self.blends_arr.append(bost_b)
+        self.blends_arr.append(sb)
 
+        return self.blends_arr
 
 class BrooklynBlend(object):
     def __init__(self):

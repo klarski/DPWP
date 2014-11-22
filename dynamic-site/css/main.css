@@ -34,7 +34,7 @@ body {
 
 #feat-product {
 	margin-left: 21%;
-	margin-right: 15%;
+/*	margin-right: 15%;*/
 	margin-top: 20px;
 }
 
@@ -47,10 +47,12 @@ body {
 }
 
 .product{
-	float: left
+	float: left;
+	margin: 10px;
 }
 
 #coffee-bags {
+	clear: both;
 	margin-top: 50px;
 	margin-left: 20%;
 	margin-right: 15%;

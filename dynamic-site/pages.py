@@ -31,50 +31,30 @@ class Page(object):
 class ContentPage(Page):
     def __init__(self):
         Page.__init__(self)
+        self.button = ""
         self.product_view = '''
         <div id="feat-product">
             <img src="http://placehold.it/350x350" width="350"/>
                 <div class="feat-info">
-                    <h3>{name}</h3><span>{price}</span>
-                    <p>Roast: {roast}</p>
-                    <p>Regions: {regions}</p>
-                    <p>Flavors: {flavors}</p>
+                    <p>Roast: </br>
+                    Regions: </br>
+                    Flavors: </p>
                 </div>
         </div>
         '''
         self.body = '''
-        <div id="coffee-bags">
-            <div class="product">
-                <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><span>{price}</span>
-            </div>
 
-            <div class="product">
-                <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><span>{price}</span>
-            </div>
-
-            <div class="product">
-                <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><span>{price}</span>
-            </div>
-
-            <div class="product">
-                <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><span>{price}</span>
-            </div>
-
-            <div class="product">
-                <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><span>{price}</span>
-            </div>
-
-            <div class="product">
-                <img src="http://placehold.it/200x200" width="200"/>
-                <h3>{name}</h3><span>{price}</span>
-            </div>
-        </div>
         '''
 
+    def coffee_buttons(self, a):
+        self.coffee_thumb_div = '<div id="coffee-bags">'
+        self.coffee_thumb1 = '<div class="product">' + '<a href="?name=' + a[0].name + '"><img src="http://placehold.it/200x200" width="200"/></a><h3>' + a[0].name + " " + str(a[0].price) + '</h3></div>'
+        self.coffee_thumb2 = '<div class="product">' + '<a href="?name=' + a[1].name + '"><img src="http://placehold.it/200x200" width="200"/></a><h3>' + a[1].name + " " + str(a[1].price) + '</h3></div>'
+        self.coffee_thumb3 = '<div class="product">' + '<a href="?name=' + a[2].name + '"><img src="http://placehold.it/200x200" width="200"/></a><h3>' + a[2].name + " " + str(a[2].price) + '</h3></div>'
+        self.coffee_thumb4 = '<div class="product">' + '<a href="?name=' + a[3].name + '"><img src="http://placehold.it/200x200" width="200"/></a><h3>' + a[3].name + " " + str(a[3].price) + '</h3></div>'
+        self.coffee_thumb5 = '<div class="product">' + '<a href="?name=' + a[4].name + '"><img src="http://placehold.it/200x200" width="200"/></a><h3>' + a[4].name + " " + str(a[4].price) + '</h3></div>'
+        self.coffee_thumb_div_close = '</div>'
+        self.all_the_coffee = self.coffee_thumb_div + self.coffee_thumb1 + self.coffee_thumb2 + self.coffee_thumb3 + self.coffee_thumb4 + self.coffee_thumb5 + self.coffee_thumb_div_close
+
     def print_out(self):
-        return self.head + self.header + self.product_view + self.body + self.close
+        return self.head + self.header + self.product_view + self.all_the_coffee + self.body + self.close

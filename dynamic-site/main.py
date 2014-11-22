@@ -12,10 +12,12 @@ from pages import ContentPage
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
         p = ContentPage()
-        data = CoffeeTypes()
+        c = CoffeeTypes()
 
 
+        p.coffee_buttons(c.blends_arr)
         self.response.write(p.print_out())
 
 app = webapp2.WSGIApplication([
