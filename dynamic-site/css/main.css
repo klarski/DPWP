@@ -1,7 +1,20 @@
 body {
 	margin: 0 auto;
+	padding: 0;
 	width: 100%;
 	color: #000;
+}
+
+p, h3, h4, h5, h6, li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+h1{
+	font-family: 'Vast Shadow', cursive;
+	font-weight: 400;
+	color: #333;
 }
 
 #header {
@@ -12,7 +25,7 @@ body {
 
 #header img {
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: 15%;
 }
 
 #header ul {
@@ -20,28 +33,35 @@ body {
 	clear: both;
 	float: right;
 	margin-top: -35px;
-	margin-right: 20px;
+	margin-right: 15%;
 }
 
 #header li{
 	float: left;
 	margin: 0 10px;
-	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #fff;
 	font-size: 20px;
 }
 
 .feat-product {
-	background-color: #ccc;
-	margin-left: 21%;
+	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .feat-product img {
 	float: left;
+	border: #333 4px solid;
+	margin-right: 100px;
 }
+
+.feat-product h1 {
+	border-bottom: #333 3px solid;
+	padding-left: 100px;
+}
+
 
 #coffee-bags img{
 	margin: 5px 10px;
@@ -49,12 +69,25 @@ body {
 
 .product{
 	float: left;
-	margin: 10px;
+	margin: 0 50px 10px 0;
+}
+
+.product h3 {
+	margin-top: 0px;
+	padding-left: 25px;
+}
+
+.product img {
+	border: #333 4px solid;
 }
 
 #coffee-bags {
 	clear: both;
-	margin-top: 50px;
-	margin-left: 20%;
+	margin-left: 14%;
 	margin-right: 15%;
+}
+
+#coffee-bags h1{
+	border-bottom: #333 3px solid;
+	padding-top: 50px;
 }

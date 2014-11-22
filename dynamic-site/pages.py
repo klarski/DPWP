@@ -6,6 +6,7 @@ class Page(object):
             <title>Handsome Hipster Coffee Roasters</title>
             <link href="css/main.css" rel="stylesheet" type="text/css" />
             <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Vast+Shadow' rel='stylesheet' type='text/css'>
         </head>
         <body>
         '''
@@ -38,7 +39,7 @@ class ContentPage(Page):
 
 
     def coffee_buttons(self, a):
-        self.coffee_thumb_div = '<div id="coffee-bags">'
+        self.coffee_thumb_div = '<div id="coffee-bags"><h1>Coffee Blends</h1>'
 
         self.coffee_thumb1 = '<div class="product">' + '<a href="?name=' + a[0].name + '"><img src="images/thumb1.jpg" width="200"/></a><h3>' + a[0].name + " " + str(a[0].price) + '</h3></div>'
 
