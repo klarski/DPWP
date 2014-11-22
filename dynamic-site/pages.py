@@ -67,15 +67,15 @@ class ContentPage(Page):
     def coffee_buttons(self, a):
         self.coffee_thumb_div = '<div id="coffee-bags"><h1>Coffee Blends</h1>'  # this is just to wrap my buttons in a div for css
 
-        self.coffee_thumb1 = '<div class="product">' + '<a href="?name=' + a[0].name + '"><img src="images/thumb1.jpg" width="200"/></a><h3>' + a[0].name + " " + str(a[0].price) + '</h3></div>'  # This is creating the button for Brooklyn Blend
+        self.coffee_thumb1 = '<div class="product">' + '<a href="?name=' + a[0].name + '"><img src="images/thumb1.jpg" width="200"/></a><h3>' + a[0].name + " $" + str(a[0].price) + '</h3></div>'  # This is creating the button for Brooklyn Blend
 
-        self.coffee_thumb2 = '<div class="product">' + '<a href="?name=' + a[1].name + '"><img src="images/thumb2.jpg" width="200"/></a><h3>' + a[1].name + " " + str(a[1].price) + '</h3></div>'  # This is creating the button for Portland Blend
+        self.coffee_thumb2 = '<div class="product">' + '<a href="?name=' + a[1].name + '"><img src="images/thumb2.jpg" width="200"/></a><h3>' + a[1].name + " $" + str(a[1].price) + '</h3></div>'  # This is creating the button for Portland Blend
 
-        self.coffee_thumb3 = '<div class="product">' + '<a href="?name=' + a[2].name + '"><img src="images/thumb3.jpg" width="200"/></a><h3>' + a[2].name + " " + str(a[2].price) + '</h3></div>'   # This is creating the button for Austin Blend
+        self.coffee_thumb3 = '<div class="product">' + '<a href="?name=' + a[2].name + '"><img src="images/thumb3.jpg" width="200"/></a><h3>' + a[2].name + " $" + str(a[2].price) + '</h3></div>'   # This is creating the button for Austin Blend
 
-        self.coffee_thumb4 = '<div class="product">' + '<a href="?name=' + a[3].name + '"><img src="images/thumb4.jpg" width="200"/></a><h3>' + a[3].name + " " + str(a[3].price) + '</h3></div>'  # This is creating the button for Boston Blend
+        self.coffee_thumb4 = '<div class="product">' + '<a href="?name=' + a[3].name + '"><img src="images/thumb4.jpg" width="200"/></a><h3>' + a[3].name + " $" + str(a[3].price) + '</h3></div>'  # This is creating the button for Boston Blend
 
-        self.coffee_thumb5 = '<div class="product">' + '<a href="?name=' + a[4].name + '"><img src="images/thumb5.jpg" width="200"/></a><h3>' + a[4].name + " " + str(a[4].price) + '</h3></div>'   # This is creating the button for SanFran Blend
+        self.coffee_thumb5 = '<div class="product">' + '<a href="?name=' + a[4].name + '"><img src="images/thumb5.jpg" width="200"/></a><h3>' + a[4].name + " $" + str(a[4].price) + '</h3></div>'   # This is creating the button for SanFran Blend
 
         self.coffee_thumb_div_close = '</div>'  # closing my div
 
